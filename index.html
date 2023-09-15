@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header-container">
+        <button id="menu-button"><i class="fa fa-bars"></i></button>
+        <h1> Converter Program </h1>
+   
+    </div>
+
+    <div id="converter-container">
+
+        <div id="converter-calc">
+            <h2>Input</h2>
+            
+            
+            <!-- <br> remove later when doing css -->
+            <div id="converter-bottom">
+                <select name="format" id="select-converter-type" class="drop-down">
+                    <option selected disabled class="drop-option">Choose type</option>
+                    <option value="1" class="drop-option">Excess - K</option>
+                    <option value="2" class="drop-option">Two - complement</option>
+                    <option value="3" class="drop-option">Bit operation</option>
+                    <option value="4" class="drop-option">Base Conversion</option>
+                    </optgroup>
+                </select>
+                <!-- Change according to what converter type we're using -->
+                <!-- TODO: Create a script to do it -->
+                <select name="format" id="select-base-format" class="drop-down">
+                    <option selected disabled class="drop-option">Choose base format</option>
+                    <option value="1" class="drop-option" >2</option>
+                    <option value="2" class="drop-option">3</option>
+                    <option value="3" class="drop-option">8</option>
+                    <option value="4" class="drop-option">10</option>
+                    <option value="5" class="drop-option">16</option>
+                    </optgroup>
+                </select>
+        
+                <div id="user-input-container">
+                    <input id="user-input1" placeholder="Insert Number">
+                    
+                    <!-- <br> remove later when doing css -->
+            
+                    <!-- enable when 2's compliment or Excess-K selected-->
+                    <input id="user-input2" placeholder="bit value" >
+            
+                    <!-- <br> remove later when doing css -->
+            
+                    <!-- enable when Excess-K selected-->
+                    <input id="user-input3" placeholder="K value" >
+            
+                    <!-- <br> remove later when doing css -->
+                    <button id="convert-button">CONVERT</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="result-display">
+            <h2>Result</h2>
+            <div id="result-container">
+                <select name="format" id="select-result-format" class="drop-down">
+                    <option selected disabled class="drop-option">Choose base format</option>
+                    <option value="1" class="drop-option">2</option>
+                    <option value="2" class="drop-option">3</option>
+                    <option value="3" class="drop-option">8</option>
+                    <option value="4" class="drop-option">10</option>
+                    <option value="5" class="drop-option">16</option>
+                    </optgroup>
+                </select>
+    
+                
+                <div id="result-box">
+                    <p>Hi</p>
+                </div>       
+            </div>
+            
+        </div>
+
+
+    </div>
+
+    <!-- TODO: create an explain format -->
+    <div id="explain-container">
+        <p>testtest</p>
+    
+    
+    </div>
+lo
+    
+
+
+</body>
+</html>
